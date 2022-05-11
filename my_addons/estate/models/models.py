@@ -38,3 +38,4 @@ class EstateProperty(models.Model):
     garden_area = fields.Integer(string='garden_area')
     garden_orientation = fields.Selection([('North', '北'), ('South', '南'), ('East', '东'), ('West', '西')],
                                           string='garden_orientation')
+    last_seen = fields.Datetime("Last Seen", default=lambda self: fields.Datetime.now())
