@@ -24,7 +24,7 @@ class EstateProperty(models.Model):
     _name = 'estate.property'
     _description = '房地产广告模块'
 
-    name = fields.Char(string='name')
+    name = fields.Char(string='name', default="Unknown")
     description = fields.Text(string='description')
     postcode = fields.Char(string='postcode')
     date_availability = fields.Date(string='date_availability')
