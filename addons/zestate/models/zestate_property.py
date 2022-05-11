@@ -5,8 +5,8 @@
 from odoo import models, fields
 
 
-class EstateProperty(models.Model):
-    _name = 'estate.property'
+class ZestateProperty(models.Model):
+    _name = 'zestate.property'
     _description = '房地产广告模块'
 
     name = fields.Char(string='name')
