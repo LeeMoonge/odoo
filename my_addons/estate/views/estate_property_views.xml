@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <odoo>
+
+    <record id="estate_property_tree_view" model="ir.ui.view">
+        <field name="name">房地产广告</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" string="Title"/>
+                <field name="postcode" string="Postcode"/>
+                <field name="bedrooms" string="Bedrooms"/>
+                <field name="living_area" string="Living Area"/>
+                <field name="expected_price" string="Expected Price"/>
+                <field name="selling_price" string="Selling Price"/>
+                <field name="date_availability" string="Availability From"/>
+            </tree>
+        </field>
+    </record>
+
     <record id="estate_property_action" model="ir.actions.act_window">
     <field name="name">房地产广告</field>
     <field name="res_model">estate.property</field>

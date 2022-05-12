@@ -24,14 +24,14 @@ class EstateProperty(models.Model):
     _name = 'estate.property'
     _description = '房地产广告模块'
 
-    name = fields.Char(string='name', default="Unknown")
+    name = fields.Char(string='Title', default="Unknown")
     description = fields.Text(string='description')
-    postcode = fields.Char(string='postcode')
-    date_availability = fields.Date(string='date_availability')
-    expected_price = fields.Float(string='expected_price')
-    selling_price = fields.Float(string='selling_price')
-    bedrooms = fields.Integer(string='bedrooms')
-    living_area = fields.Integer(string='living_area')
+    postcode = fields.Char(string='Postcode')
+    date_availability = fields.Date(string='Availability From')
+    expected_price = fields.Float(string='Expected Price')
+    selling_price = fields.Float(string='Selling Price')
+    bedrooms = fields.Integer(string='Bedrooms')
+    living_area = fields.Integer(string='Living Area')
     facades = fields.Integer(string='facades')
     garage = fields.Boolean(string='garage')
     garden = fields.Boolean(string='garden')
