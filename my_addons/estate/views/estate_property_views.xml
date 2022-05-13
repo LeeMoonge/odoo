@@ -63,6 +63,7 @@
             <search>
                 <field name="name" string="名称"/>
                 <field name="postcode" string="Postcode"/>
+                <filter name="bedrooms" domain="[('bedrooms', '>', 3)]"/>
 
             </search>
         </field>
