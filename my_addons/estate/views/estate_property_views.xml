@@ -18,10 +18,48 @@
         </field>
     </record>
 
+    <record id="estate_property_form_view" model="ir.ui.view">
+        <field name="name">房地产广告</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <h1>
+                        <filed name="name"/>
+                    </h1>
+                    <group>
+                        <group>
+                            <field name="postcode" string="Postcode"/>
+                            <field name="date_availability" string="Availability From"/>
+                        </group>
+                        <group>
+                            <field name="expected_price" string="Expected Price"/>
+                            <field name="selling_price" string="Selling Price"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <group>
+                                <field name="description"/>
+                                <field name="bedrooms"/>
+                                <field name="living_area"/>
+                                <field name="facades"/>
+                                <field name="garage"/>
+                                <field name="garden"/>
+                                <field name="garden_area"/>
+                                <field name="garden_orientation"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
     <record id="estate_property_action" model="ir.actions.act_window">
-    <field name="name">房地产广告</field>
-    <field name="res_model">estate.property</field>
-    <field name="view_mode">tree,form</field>
+        <field name="name">房地产广告</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
     <menuitem id="estate_property_menu_action" action="estate_property_action"/>
